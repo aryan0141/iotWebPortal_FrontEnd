@@ -14,6 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&family=Roboto&display=swap"
     rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="index.css" />
   <title>Intern Project</title>
@@ -21,85 +23,156 @@
 
 
 <body>
-  <header>
-    <!-- ----------------------------Hamberger Menu---------------------------------- -->
-    <div id="menu-bar">
-      <div id="menu" onclick="onClickMenu()">
-        <div id="bar1" class="bar"></div>
-        <div id="bar2" class="bar"></div>
-        <div id="bar3" class="bar"></div>
-      </div>
-      <ul class="nav" id="nav">
-        <h1 style="color: white;">Project</h1>
-        <li>
-          <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-address-book" aria-hidden="true"></i> About Us</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact Us</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Tools</a>
-        </li>
-      </ul>
+  <div id="left-coloumn">
+    <p style="color: white; font-size: 1.85rem; font-family: 'Staatliches', cursive; margin: auto;">IoT Web Portal
+    </p>
+    <div>
+      <p style="margin: 40px 0px 5px 0px; color: white; font-size: 0.9rem; font-family: 'Staatliches', cursive;">
+        LOCATIONS <i class="fas fa-map-marker-alt"></i>
+      </p>
     </div>
-    <div class="menu-bg" id="menu-bg"></div>
+    <div id="mainLocationsDiv">
+
+    </div>
+  </div>
+
+  <div id="right-coloumn">
+
+
 
     <!-------------------------------------Main Navbar-------------------------------->
 
     <div id="navbar">
       <div class="nav-items">
-        <div class="links">
-          <div class="logo">
-            <h3>Project</h3>
-          </div>
-
-          <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-          <a href="#"><i class="fa fa-address-book" aria-hidden="true"></i> About Us</a>
-          <a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact Us</a>
-          <a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Tools</a>
+        <!-- <a href="#" style="margin: auto 10px; font-size: 2.5rem;"><i class="fas fa-image"></i></a> -->
+        <div style="float: left; margin: auto 5px;">
+          <p style="color: #f96332; font-size: 1.2rem; font-family: 'Staatliches', cursive;">DASHBOARD</p>
+        </div>
+        <div style="float: right;">
+          <ul>
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </header>
 
-  <!-------------------------------------Center Body-------------------------------->
 
-  <section id="center-body">
-    <div id="locations_data">
-      <h1>Locations</h1>
-      <div id="mainLocationsDiv">
-
+    <div style="display: grid; grid-template-columns: 25% 25% 25% 25%; padding: 10px 30px; margin: 30px 0px;">
+      <div class="sensor-data-card" id="sensor1">
+        <p class="sensor-data-card-sensor-name">Pressure
+        </p>
+        <p class="sensor-data-card-sensor-weight">Weight</p>
+        <p class="sensor-data-card-sensor-value">40%</p>
+        <p class="sensor-data-card-sensor-time"><i
+            class="far fa-alarm-clock"></i> 4:14PM&nbsp;|&nbsp;21 May 2021</p>
+      </div>
+      <div class="sensor-data-card" style="border-color: #1F51FF;" id="sensor2">
+        <p class="sensor-data-card-sensor-name">Temperature
+        </p>
+        <p class="sensor-data-card-sensor-weight">Weight</p>
+        <p class="sensor-data-card-sensor-value">40%</p>
+        <p class="sensor-data-card-sensor-time"><i
+            class="far fa-alarm-clock"></i> 4:14PM&nbsp;|&nbsp;21 May 2021</p>
+      </div>
+      <div class="sensor-data-card" style="border-color: #32CD32;" id="sensor3">
+        <p class="sensor-data-card-sensor-name">Humidity
+        </p>
+        <p class="sensor-data-card-sensor-weight">Weight</p>
+        <p class="sensor-data-card-sensor-value">40%</p>
+        <p class="sensor-data-card-sensor-time"><i
+            class="far fa-alarm-clock"></i> 4:14PM&nbsp;|&nbsp;21 May 2021</p>
+      </div>
+      <div class="sensor-data-card" style="border-color: #FFC300;" id="sensor4">
+        <p class="sensor-data-card-sensor-name">Soil Moisture
+        </p>
+        <p class="sensor-data-card-sensor-weight">Weight</p>
+        <p class="sensor-data-card-sensor-value">40%</p>
+        <p class="sensor-data-card-sensor-time"><i
+            class="far fa-alarm-clock"></i> 4:14PM&nbsp;|&nbsp;21 May 2021</p>
       </div>
     </div>
+
+
+    <div style="display: grid; grid-template-columns: 33% 33% 34%;">
+      
+    </div>
+
+
+
+    <!-------------------------------------Center Body-------------------------------->
+
+    <!-- <section id="center-body"> -->
     <div id="sensors_data">
-      <h1>Sensors Data</h1>
+      <!-- <h1>Sensors Data</h1> -->
       <div id="mainSensorsDiv">
+        <p style="justify-content: center; margin: auto;">Extra Analysis To Be Done Later On</p>
       </div>
-  </section>
+      <!-- <canvas></canvas> -->
+    </div>
+    <!-- </section> -->
+    <!-- <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere in voluptate ad facilis eius tempora qua
+      m necessitatibus iste debitis? Aliquam, distinctio cum laudantium id repudiandae, dolores ipsa fugit harum, repe
+      llat iste beatae excepturi illum. Mollitia ratione vel cum sequi magni facilis quod iusto asperiores perspiciati
+      nemo magnam modi harum ut unde ex sapiente laborum saepe exercitationem, similique in nihil aliquam sunt? Officii
+      s corrupti vel temporibus facere, sunt nostrum iure nisi quibusdam tenetur ad ipsum eligendi mollitia ducimus
+      velit
+      voluptas eveniet illo dicta consequuntur ipsam pariatur corporis, porro ullam. Pariatur accusantium adipisci nihil
+      q
+      uibusdam vel, aperiam aut quisquam distinctio autem nisi dicta quod consectetur deleniti voluptates minus, necessi
+      tatibus quis facere magnam sequi quia porro enim reprehenderit. Quo maxime temporibus eaque id dolore volup
+      tates inventore.</h1> -->
 
+    <footer>
+        <!-- <div id="leftFooter">
+          <p>Currently In Development Phase |
+            Indian Institute of
+            Technology Jodhpur</p>
+        </div> -->
+        
+        <div id="socialIcons">
+          <ul>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-github"></i></a></li>
+            <li><a href=""><i class="far fa-envelope"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+    </footer>
+
+
+
+  </div>
   <script>
-    function onClickMenu() {
-      document.getElementById("menu").classList.toggle("change");
-      document.getElementById("nav").classList.toggle("change");
-
-      document.getElementById("menu-bg").classList.toggle("change-bg");
-    }
 
     let cities = ['Jaipur', 'Agra', 'Srinagar', 'Panaji', 'Indore', 'Ithawah', 'Chandigarh', 'Hyderabad', 'Bharatpur', 'Kanpur', 'New York'];
     let states = ['Rajasthan', 'UP', 'J&K', 'Goa', 'MP', 'UP', 'Haryana', 'AP', 'Rajasthan', 'UP', 'America'];
+    let sensor_data = [40, 34, 54, 87, 21, 23, 43, 76, 43, 34, 76];
+    let sensor_time = ['4:14PM | 21 May 2021', 
+                        '5:44AM | 31 August 2021', 
+                        '6:14PM | 21 May 2021', 
+                        '4:14PM | 31 July 2021', 
+                        '12:14PM | 21 May 2021', 
+                        '4:14PM | 21 May 2021', 
+                        '4:21PM | 21 June 2021', 
+                        '4:14PM | 21 May 2021', 
+                        '4:34PM | 23 January 2021', 
+                        '4:44PM | 23 May 2021', 
+                        '6:14PM | 21 May 2021'];
 
 
 
     var mainLocationsDiv = document.getElementById('mainLocationsDiv');
-    var mainSensorsDiv = document.getElementById('mainSensorsDiv');
-    mainSensorsDiv.innerHTML = '<h3>' + cities[0] + '</h3> <p>' + states[0] + '</p>'
+    var mainSensorsDiv = document.getElementById('sensor1');
+    mainSensorsDiv.innerHTML = '<p class="sensor-data-card-sensor-name">Pressure</p> <p class="sensor-data-card-sensor-weight">Weight</p> <p class="sensor-data-card-sensor-value">' + sensor_data[0] + '%</p> <p class="sensor-data-card-sensor-time"><iclass="far fa-alarm-clock"></i>' + sensor_time[0] + '</p>';
+    // mainSensorsDiv.innerHTML = '<h3>' + cities[0] + '</h3> <p>' + states[0] + '</p>'
 
     for (let i = 0; i < cities.length; i++) {
       var div = document.createElement('div');
       div.className = 'location_card';
+      div.tabIndex = "1";
       div.id = i + 1;
       // alert(div.id);
       // console.log(div.id);
@@ -112,25 +185,10 @@
 
 
     function func(el) {
-      mainSensorsDiv.innerHTML = '<h3>' + cities[el.id - 1] + '</h3> <p>' + states[el.id - 1] + '</p>';
-      // alert(el.id);
-      // console.log(el.id);
+      mainSensorsDiv.innerHTML = '<p class="sensor-data-card-sensor-name">Pressure</p> <p class="sensor-data-card-sensor-weight">Weight</p> <p class="sensor-data-card-sensor-value">' + sensor_data[el.id - 1] + '%</p> <p class="sensor-data-card-sensor-time"><iclass="far fa-alarm-clock"></i>' + sensor_time[el.id - 1] + '</p>';
     }
   </script>
-  <footer>
-    <div id="socialIcons">
-      <a href=""><i class="fab fa-instagram"></i></a>
-      <a href=""><i class="fab fa-github"></i></a>
-      <a href=""><i class="far fa-envelope"></i></a>
-      <a href=""><i class="fab fa-twitter"></i></a>
-    </div>
-    <!-- <hr class="new1"> -->
-    <!-- <hr style="color: red;"> -->
-    <div id="bottomFooter">
-      <p style="color:white; font-family: 'Lato', sans-serif;">Currently In Development Phase | Indian Institute of
-        Technology Jodhpur</p>
-    </div>
-  </footer>
+
 
 </body>
 
