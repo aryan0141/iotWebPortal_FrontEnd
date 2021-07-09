@@ -166,7 +166,7 @@
 
     var mainLocationsDiv = document.getElementById('mainLocationsDiv');
     var mainSensorsDiv = document.getElementById('sensor1');
-    mainSensorsDiv.innerHTML = '<p class="sensor-data-card-sensor-name">Pressure</p> <p class="sensor-data-card-sensor-weight">Weight</p> <p class="sensor-data-card-sensor-value">' + sensor_data[0] + '%</p> <p class="sensor-data-card-sensor-time"><iclass="far fa-alarm-clock"></i>' + sensor_time[0] + '</p>';
+    mainSensorsDiv.innerHTML = '<p class="sensor-data-card-sensor-name">Pressure</p> <p class="sensor-data-card-sensor-weight">Weight</p> <p class="sensor-data-card-sensor-value">' + sensor_data[0] + '%</p> <p class="sensor-data-card-sensor-time"><i>class="far fa-alarm-clock"></i>' + sensor_time[0] + '</p>';
     // mainSensorsDiv.innerHTML = '<h3>' + cities[0] + '</h3> <p>' + states[0] + '</p>'
 
     for (let i = 0; i < cities.length; i++) {
@@ -185,7 +185,7 @@
 
 
     function func(el) {
-      mainSensorsDiv.innerHTML = '<p class="sensor-data-card-sensor-name">Pressure</p> <p class="sensor-data-card-sensor-weight">Weight</p> <p class="sensor-data-card-sensor-value">' + sensor_data[el.id - 1] + '%</p> <p class="sensor-data-card-sensor-time"><iclass="far fa-alarm-clock"></i>' + sensor_time[el.id - 1] + '</p>';
+      mainSensorsDiv.innerHTML = '<p class="sensor-data-card-sensor-name">Pressure</p> <p class="sensor-data-card-sensor-weight">Weight</p> <p class="sensor-data-card-sensor-value">' + sensor_data[el.id - 1] + '%</p> <p class="sensor-data-card-sensor-time"><i>class="far fa-alarm-clock"></i>' + sensor_time[el.id - 1] + '</p>';
     }
   </script>
 
