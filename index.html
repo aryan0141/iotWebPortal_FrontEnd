@@ -22,7 +22,7 @@
 </head>
 
 
-<body>
+<body class="body-class">
   <div id="left-coloumn">
     <p style="color: white; font-size: 1.85rem; font-family: 'Staatliches', cursive; margin: auto;">IoT Web Portal
     </p>
@@ -44,10 +44,37 @@
 
     <div id="navbar">
       <div class="nav-items">
-        <!-- <a href="#" style="margin: auto 10px; font-size: 2.5rem;"><i class="fas fa-image"></i></a> -->
-        <div style="float: left; margin: auto 5px;">
+        <div id="heading-text">
           <p style="color: #f96332; font-size: 1.2rem; font-family: 'Staatliches', cursive;">DASHBOARD</p>
         </div>
+
+        <div id="hamburgerNavbar">
+          <div id="menuToggle">
+            <input onclick="checkedFunc(this)" id="check" type="checkbox"/>
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+              <div style="padding: 80px 20px;">
+                <p style="color: white; font-size: 1.85rem; font-family: 'Staatliches', cursive; margin: auto;">IoT Web
+                  Portal
+                </p>
+                <div>
+                  <p
+                    style="margin: 40px 0px 5px 0px; color: white; font-size: 0.9rem; font-family: 'Staatliches', cursive;">
+                    LOCATIONS <i class="fas fa-map-marker-alt"></i>
+                  </p>
+                </div>
+                <div id="navbarLocationsDiv">
+
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+
         <div style="float: right;">
           <ul>
             <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
@@ -60,47 +87,61 @@
     </div>
 
 
-    <div style="display: grid; grid-template-columns: 25% 25% 25% 25%; padding: 10px 30px; margin: 30px 0px;">
+    <!--------------------------------------------Hamburger Navbar-------------------------------->
+
+
+
+    <div id="currentLocation"> 
+      
+    </div>
+
+    <div id="sensor-cards">
       <div class="sensor-data-card" id="sensor1">
         <p class="sensor-data-card-sensor-name">Pressure
         </p>
         <p class="sensor-data-card-sensor-weight">Weight</p>
         <p class="sensor-data-card-sensor-value">40%</p>
-        <p class="sensor-data-card-sensor-time"><i
-            class="far fa-alarm-clock"></i> 4:14PM&nbsp;|&nbsp;21 May 2021</p>
+        <p class="sensor-data-card-sensor-time"><i class="far fa-alarm-clock"></i> 4:14PM&nbsp;|&nbsp;21 May 2021</p>
       </div>
       <div class="sensor-data-card" style="border-color: #1F51FF;" id="sensor2">
         <p class="sensor-data-card-sensor-name">Temperature
         </p>
         <p class="sensor-data-card-sensor-weight">Weight</p>
         <p class="sensor-data-card-sensor-value">40%</p>
-        <p class="sensor-data-card-sensor-time"><i
-            class="far fa-alarm-clock"></i> 4:14PM&nbsp;|&nbsp;21 May 2021</p>
+        <p class="sensor-data-card-sensor-time"><i class="far fa-alarm-clock"></i> 4:14PM&nbsp;|&nbsp;21 May 2021</p>
       </div>
       <div class="sensor-data-card" style="border-color: #32CD32;" id="sensor3">
         <p class="sensor-data-card-sensor-name">Humidity
         </p>
         <p class="sensor-data-card-sensor-weight">Weight</p>
         <p class="sensor-data-card-sensor-value">40%</p>
-        <p class="sensor-data-card-sensor-time"><i
-            class="far fa-alarm-clock"></i> 4:14PM&nbsp;|&nbsp;21 May 2021</p>
+        <p class="sensor-data-card-sensor-time"><i class="far fa-alarm-clock"></i> 4:14PM&nbsp;|&nbsp;21 May 2021</p>
       </div>
       <div class="sensor-data-card" style="border-color: #FFC300;" id="sensor4">
         <p class="sensor-data-card-sensor-name">Soil Moisture
         </p>
         <p class="sensor-data-card-sensor-weight">Weight</p>
         <p class="sensor-data-card-sensor-value">40%</p>
-        <p class="sensor-data-card-sensor-time"><i
-            class="far fa-alarm-clock"></i> 4:14PM&nbsp;|&nbsp;21 May 2021</p>
+        <p class="sensor-data-card-sensor-time"><i class="far fa-alarm-clock"></i> 4:14PM&nbsp;|&nbsp;21 May 2021</p>
       </div>
     </div>
 
 
     <div style="display: grid; grid-template-columns: 33% 33% 34%;">
-      
+
     </div>
 
-
+    <h1 style="font-family: 'Montserrat', sans-serif; margin: 10px 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, harum? Aliquam alias dignissimos incidunt
+      ipsam deserunt dicta iste maiores atque error veniam porro ea saepe dolor quod reprehenderit, magnam reiciendis
+      voluptas, laboriosam consequatur iusto a sapiente. Suscipit velit doloremque in earum neque omnis ad obcaecati?
+      Omnis unde dolor accusamus praesentium aut esse explicabo nam, quam id perferendis consequatur quisquam
+      perspiciatis quaerat soluta commodi placeat repellat! Quas corporis soluta ullam, delectus sint, quidem minus
+      dolorum eos sit, itaque incidunt porro atque est eum amet ducimus numquam quae ea iste eius dicta veritatis
+      tempora officiis dolore. Sequi deleniti consequuntur maxime quaerat eaque enim accusamus repellat voluptatem,
+      maiores numquam. Libero dignissimos consequatur eveniet. Aliquid cum officiis quasi optio dolorem natus, soluta
+      voluptatem ratione? Veritatis perferendis quae in, sapiente, dolorem rem incidunt minima sunt facere nulla fugit
+      sit dolores repudiandae similique sed, harum eum maiores a veritatis atque optio nesciunt, laborum velit quis quam
+      voluptas repudiandae?</h1>
 
     <!-------------------------------------Center Body-------------------------------->
 
@@ -112,34 +153,23 @@
       </div>
       <!-- <canvas></canvas> -->
     </div>
-    <!-- </section> -->
-    <!-- <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere in voluptate ad facilis eius tempora qua
-      m necessitatibus iste debitis? Aliquam, distinctio cum laudantium id repudiandae, dolores ipsa fugit harum, repe
-      llat iste beatae excepturi illum. Mollitia ratione vel cum sequi magni facilis quod iusto asperiores perspiciati
-      nemo magnam modi harum ut unde ex sapiente laborum saepe exercitationem, similique in nihil aliquam sunt? Officii
-      s corrupti vel temporibus facere, sunt nostrum iure nisi quibusdam tenetur ad ipsum eligendi mollitia ducimus
-      velit
-      voluptas eveniet illo dicta consequuntur ipsam pariatur corporis, porro ullam. Pariatur accusantium adipisci nihil
-      q
-      uibusdam vel, aperiam aut quisquam distinctio autem nisi dicta quod consectetur deleniti voluptates minus, necessi
-      tatibus quis facere magnam sequi quia porro enim reprehenderit. Quo maxime temporibus eaque id dolore volup
-      tates inventore.</h1> -->
+
 
     <footer>
-        <!-- <div id="leftFooter">
+      <!-- <div id="leftFooter">
           <p>Currently In Development Phase |
             Indian Institute of
             Technology Jodhpur</p>
         </div> -->
-        
-        <div id="socialIcons">
-          <ul>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            <li><a href=""><i class="fab fa-github"></i></a></li>
-            <li><a href=""><i class="far fa-envelope"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-          </ul>
-        </div>
+
+      <div id="socialIcons">
+        <ul>
+          <li><a href=""><i class="fab fa-instagram"></i></a></li>
+          <li><a href=""><i class="fab fa-github"></i></a></li>
+          <li><a href=""><i class="far fa-envelope"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
     </footer>
 
 
@@ -150,44 +180,84 @@
     let cities = ['Jaipur', 'Agra', 'Srinagar', 'Panaji', 'Indore', 'Ithawah', 'Chandigarh', 'Hyderabad', 'Bharatpur', 'Kanpur', 'New York'];
     let states = ['Rajasthan', 'UP', 'J&K', 'Goa', 'MP', 'UP', 'Haryana', 'AP', 'Rajasthan', 'UP', 'America'];
     let sensor_data = [40, 34, 54, 87, 21, 23, 43, 76, 43, 34, 76];
-    let sensor_time = ['4:14PM | 21 May 2021', 
-                        '5:44AM | 31 August 2021', 
-                        '6:14PM | 21 May 2021', 
-                        '4:14PM | 31 July 2021', 
-                        '12:14PM | 21 May 2021', 
-                        '4:14PM | 21 May 2021', 
-                        '4:21PM | 21 June 2021', 
-                        '4:14PM | 21 May 2021', 
-                        '4:34PM | 23 January 2021', 
-                        '4:44PM | 23 May 2021', 
-                        '6:14PM | 21 May 2021'];
+    let sensor_time = ['4:14PM | 21 May 2021',
+      '5:44AM | 31 August 2021',
+      '6:14PM | 21 May 2021',
+      '4:14PM | 31 July 2021',
+      '12:14PM | 21 May 2021',
+      '4:14PM | 21 May 2021',
+      '4:21PM | 21 June 2021',
+      '4:14PM | 21 May 2021',
+      '4:34PM | 23 January 2021',
+      '4:44PM | 23 May 2021',
+      '6:14PM | 21 May 2021'];
 
 
 
     var mainLocationsDiv = document.getElementById('mainLocationsDiv');
     var mainSensorsDiv = document.getElementById('sensor1');
+    var currentLocation = document.getElementById('currentLocation');
     mainSensorsDiv.innerHTML = '<p class="sensor-data-card-sensor-name">Pressure</p> <p class="sensor-data-card-sensor-weight">Weight</p> <p class="sensor-data-card-sensor-value">' + sensor_data[0] + '%</p> <p class="sensor-data-card-sensor-time"><i class="far fa-alarm-clock"></i> ' + sensor_time[0] + '</p>';
     // mainSensorsDiv.innerHTML = '<h3>' + cities[0] + '</h3> <p>' + states[0] + '</p>'
+    currentLocation.innerHTML = '<p><i class="fas fa-map-marker-alt"></i> ' + cities[0] + '</p>'
+
+
 
     for (let i = 0; i < cities.length; i++) {
       var div = document.createElement('div');
       div.className = 'location_card';
       div.tabIndex = "1";
       div.id = i + 1;
-      // alert(div.id);
-      // console.log(div.id);
       div.innerHTML = '<h3>' + cities[i] + '</h3> <p>' + states[i] + '</p>';
-      // div.addEventListener('click', func(this), true);
-      // div.onclick = alert("Hello");
       div.onclick = function () { func(this) };
       mainLocationsDiv.appendChild(div);
     }
 
 
+    var navbarLocationsDiv = document.getElementById('navbarLocationsDiv');
+    for (let i = 0; i < cities.length; i++) {
+      var div = document.createElement('div');
+      div.className = 'location_card';
+      div.tabIndex = "1";
+      div.id = i + 1;
+      div.innerHTML = '<h3>' + cities[i] + '</h3> <p>' + states[i] + '</p>';
+      div.onclick = function () { func(this) };
+      navbarLocationsDiv.appendChild(div);
+    }
+
+
+
+
+
+    function checkedFunc(el) {
+      var body = document.getElementsByTagName("BODY")[0];
+      if (el.checked == true) {
+        body.style.overflow = "hidden";
+      } else {
+        body.style.overflow = "visible";
+      }
+      // console.log(el.checked);
+    }
+
+
+
+
+
+
+
     function func(el) {
+      currentLocation.innerHTML = '<p><i class="fas fa-map-marker-alt"></i> ' + cities[el.id - 1] + '</p>'
       mainSensorsDiv.innerHTML = '<p class="sensor-data-card-sensor-name">Pressure</p> <p class="sensor-data-card-sensor-weight">Weight</p> <p class="sensor-data-card-sensor-value">' + sensor_data[el.id - 1] + '%</p> <p class="sensor-data-card-sensor-time"><i class="far fa-alarm-clock"></i> ' + sensor_time[el.id - 1] + '</p>';
+      
+      // Extras-
+      var checkbox = document.getElementById("check").checked = false;
+      var body = document.getElementsByTagName("BODY")[0];
+      body.style.overflow = "visible";
+
     }
   </script>
+
+
 
 
 </body>
